@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 </head>
 <body>
-    <h1>Video Lightbox Auto-Open Example</h1>
-
     <!-- 動画リンク -->
     <a id="video-link" href="/lite/assets/gotchi_tutorial.mp4" data-fancybox style="display:none;">
-        Auto-Open Video
     </a>
 
     <!-- Fancybox JS -->
@@ -22,7 +19,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // ページロード時にLightboxを自動的に開く
-            Fancybox.show([{ src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", type: "iframe" }]);
+            Fancybox.show([{ src: "/lite/assets/gotchi_tutorial.mp4", type: "iframe" }]);
         });
     </script>
 </body>
