@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleepagotchi Tutorial</title>
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <style>
+        .video-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .video-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <video controls width="80">
-    <source src="/lite/assets/gotchi_tutorial.mp4" type="video/mp4" />
-    </video>
+    <h1>Magnific Popup Local Video Example</h1>
+
+    <!-- 動画リンク -->
+    <a class="video-link popup-video" href="/lite/assets/gotchi_tutorial.mp4"></a>
+
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Magnific Popupの初期化
+            $('.popup-video').magnificPopup({
+                type: 'inline',
+                midClick: true,
+                callbacks: {
+                    open: function() {
+                        // 動画のミュートと自動再生設定
+                        const video = document.querySelector('#popup-video-element');
+                        video.muted = true;
+                        video.play();
+                    },
+                    close: function() {
+                        // 動画を停止
+                        const video = document.querySelector('#popup-video-element');
+                        video.pause();
+                        video.currentTime = 0; // 再生位置をリセット
+                    }
+                }
+            });
+        });
+    </script>
+
+    <!-- 隠れた動画コンテナ -->
+    <div id="popup-video-container" style="display:none;">
+        <video id="popup-video-element" width="640" height="360" controls>
+            <source src="/lite/assets/gotchi_tutorial.mp4" type="video/mp4">
+            動画再生がサポートされていないブラウザです
+        </video>
+    </div>
 </body>
 </html>
