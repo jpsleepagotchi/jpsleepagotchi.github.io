@@ -8,19 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 </head>
 <body>
-    <!-- 動画リンク -->
-    <a id="video-link" href="/lite/assets/gotchi_tutorial.mp4" data-fancybox style="display:none;">
-    </a>
-
-    <!-- Fancybox JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
-    <!-- 自動起動スクリプト -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // ページロード時にLightboxを自動的に開く
-            Fancybox.show([{ src: "/lite/assets/gotchi_tutorial.mp4", type: "iframe" }]);
-        });
-    </script>
+    <video controls width="80">
+    <source src="/lite/assets/gotchi_tutorial.mp4" type="video/webm" />
+    </video>
 </body>
 </html>
