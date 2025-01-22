@@ -1,7 +1,7 @@
 # 利用規約
 
-本規約の原文は[こちら](https://app.termly.io/policy-viewer/policy.html?policyUUID=ca046a5a-4020-4889-941a-e965756c1cd2#disputes)にあります。可能なかぎり英文の確認をお願い致します。  
-訳部分については、原文が適用されることをご了承ください。  
+本規約の原文は[こちら](https://app.termly.io/policy-viewer/policy.html?policyUUID=ca046a5a-4020-4889-941a-e965756c1cd2#disputes)にあります。25可能なかぎり英文の確認をお願い致します。  
+訳部分については、原文が適用されることをご了承ください。(項.25は本ページにおいて追加された項目です)  
 
 ### 1. 利用規約への同意
 
