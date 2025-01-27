@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Sleepagotchi Support</title>
 
-
-    // to prevent browser or server-side caching issues. It avoids infinite reload loops
-    // by checking if the "cache_buster" parameter already exists in the URL.
+    <!--
+      to prevent browser or server-side caching issues. It avoids infinite reload loops
+      by checking if the "cache_buster" parameter already exists in the URL.
+    -->
     let currentUrl = new URL(window.location.href); // Get the current page URL
 
     // Check if the "cache_buster" parameter is already present in the URL
