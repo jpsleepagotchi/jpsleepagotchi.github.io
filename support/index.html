@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <title>Sleepagotchi Support</title>
+
+    <!-- LINE LIFF SDK -->
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
+
+    <!-- Mava Support Widget Integration -->
+    <script 
+        defer 
+        src="https://widget.mava.app" 
+        widget-version="v2" 
+        id="MavaWebChat" 
+        enable-sdk="false" 
+        data-token="ae1d17fd5d97f5f8eefc361f1e4525474c1bc164cc1697e12c27e123e3cbda61">
+    </script>
+
+    <style>
+        /* Mobile input optimization */
+        input, textarea {
+            -webkit-text-size-adjust: 100%;
+            touch-action: manipulation;
+        }
+
+        /* Background settings */
+        body {
+            background-image: url('https://mito.daisan-kikaku.com/assets/support.jpg');
+            background-repeat: no-repeat;
+            background-size: 200%;
+            background-position: center -210px;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        /* Container for glass effect */
+        .bg {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            padding: 60px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Glassmorphism effect styling */
+        .glass {
+            width: 100%;
+            max-width: 90%;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-right-color: rgba(255, 255, 255, 0.2);
+            border-bottom-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 5px 20px rgba(255, 152, 79, 0.5);
+        }
+
+        /* Typography styles */
+        .glass h1 {
+            text-align: center;
+            color: #fff;
+            font-family: "Heebo", sans-serif;
+            font-size: 4rem;
+            font-weight: bold;
+            letter-spacing: 0.06em;
+        }
+
+        .glass p {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 2.5rem;
+        }
+
+        /* Iframe adjustments */
+        .iframe-window.svelte-1a0fcx6.svelte-1a0fcx6 {
+            max-width: 100% !important;
+        }
+
+        /* Mava iframe scaling */
+        #mava-iframe {
+            transform: scale(2.1);
+            transform-origin: 0 0;
+            width: calc(100% * (1/2.1));
+            height: calc(100% * (1/2.1));
+        }
+    </style>
+</head>
+<body>
+    <!-- Support page header with glass effect -->
+    <div class="bg">
+        <div class="glass">
+            <h1>Sleepagotchi Support</h1>
+            <p>
+                下部のフォームからご質問を英語で入力してください。改行すると送信されます。<br>
+                ※ 入力しづらい事象については改善に取り組んでいます 🙇
+            </p>
+        </div>
+    </div>
+</body>
+</html>
