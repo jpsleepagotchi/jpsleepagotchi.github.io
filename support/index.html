@@ -9,6 +9,7 @@
       to prevent browser or server-side caching issues. It avoids infinite reload loops
       by checking if the "cache_buster" parameter already exists in the URL.
     -->
+    <script language="javascript">
     let currentUrl = new URL(window.location.href); // Get the current page URL
 
     // Check if the "cache_buster" parameter is already present in the URL
@@ -22,6 +23,7 @@
         // Reload the page with the updated URL
         window.location.href = currentUrl.toString();
     }
+    </script>
 
     <!-- LINE LIFF SDK -->
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
