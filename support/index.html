@@ -121,6 +121,23 @@ header('Cache-Control: no-cache');
             width: calc(100% * (1/2.1));
             height: calc(100% * (1/2.1));
         }
+
+        /* for pc */
+        #mava-iframe {
+            transform: scale(1.5);
+            transform-origin: 0 0;
+            width: calc(100% * (1/1.5));
+            height: calc(100% * (1/1.5));
+        }
+        /* for mobile（under 768px） */
+        @media screen and (max-width: 767px) {
+        #mava-iframe {
+            transform: scale(2.1);
+            width: calc(100% * (1/2.1));
+            height: calc(100% * (1/2.1));
+        }
+        }
+   
     </style>
 </head>
 <body>
