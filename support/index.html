@@ -94,6 +94,23 @@ header('Cache-Control: no-cache');
         }
 
         /* Typography styles */
+        /* for pc */
+        .glass h1 {
+            text-align: center;
+            color: #fff;
+            font-family: "Heebo", sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 0.06em;
+        }
+
+        .glass p {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+        /* for mobile（under 768px） */
+        @media screen and (max-width: 767px) {
         .glass h1 {
             text-align: center;
             color: #fff;
@@ -107,6 +124,7 @@ header('Cache-Control: no-cache');
             margin-top: 20px;
             color: #fff;
             font-size: 2.5rem;
+        }
         }
 
         /* Iframe adjustments */
