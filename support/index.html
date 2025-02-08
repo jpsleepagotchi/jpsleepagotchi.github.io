@@ -57,13 +57,20 @@ header('Cache-Control: no-cache');
         }
 
         /* Background settings */
+        /* for pc */
         body {
             background-image: url('https://jpsleepagotchi.github.io/support/support.jpg');
             background-repeat: no-repeat;
-            background-size: 200%;
+            background-size: 120%;
             background-position: center -210px;
             background-attachment: fixed;
             min-height: 100vh;
+        }
+        /* for mobile（under 768px） */
+        @media screen and (max-width: 767px) {
+        body {
+            background-size: 200%;
+        }
         }
 
         /* Container for glass effect */
@@ -112,17 +119,10 @@ header('Cache-Control: no-cache');
         /* for mobile（under 768px） */
         @media screen and (max-width: 767px) {
         .glass h1 {
-            text-align: center;
-            color: #fff;
-            font-family: "Heebo", sans-serif;
             font-size: 4rem;
-            font-weight: bold;
-            letter-spacing: 0.06em;
         }
 
         .glass p {
-            margin-top: 20px;
-            color: #fff;
             font-size: 2.5rem;
         }
         }
