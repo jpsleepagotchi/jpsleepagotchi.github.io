@@ -71,10 +71,12 @@ input, textarea {
 body {
     background-image: url('https://jpsleepagotchi.github.io/support/support.jpg');
     background-repeat: no-repeat;
-    background-size: 125%;
+    background-size: 110%;
     background-position: center -210px;
     background-attachment: fixed;
     min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 /* for mobile（under 768px） */
 @media screen and (max-width: 767px) {
@@ -97,9 +99,9 @@ body {
 
 /* Glassmorphism effect styling */
 .glass {
-    /* width: 100%; */
+    width: 100%;
     max-width: 90%;
-    padding: 5px 20px 5px 20px;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-right-color: rgba(255, 255, 255, 0.2);
@@ -116,7 +118,7 @@ body {
     text-align: center;
     color: #fff;
     font-family: "Heebo", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.06em;
 }
@@ -124,7 +126,7 @@ body {
 .glass p {
     margin-top: 20px;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 /* for mobile（under 768px） */
 @media screen and (max-width: 767px) {
@@ -157,7 +159,7 @@ body {
      width: calc(100% * (1/2.1));
      height: calc(100% * (1/2.1));
 }
-}        
+}   
     </style>
 </head>
 <body>
