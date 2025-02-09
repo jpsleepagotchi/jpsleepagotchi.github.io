@@ -20,6 +20,8 @@ body {
     background-position: center -210px;
     background-attachment: fixed;
     min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 /* for mobile（under 768px） */
 @media screen and (max-width: 767px) {
