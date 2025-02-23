@@ -1,3 +1,4 @@
+// To improve maintainability, use innerHTML to insert content from an external JavaScript file.
 document.getElementById("bg").innerHTML = `
         <div class="glass">
             <h1>Sleepagotchi Support</h1>
